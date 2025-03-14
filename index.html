@@ -4,17 +4,21 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Mes projets</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
+  <ul class="projects">
+    <li>
+      <h2>Campagne Google Ads - Entreprise X</h2>
+      <p>Optimisation des campagnes de Google Ads pour l'Entreprise X. Résultats : +50% de conversions.</p>
+      <a href="/projets/campagne-entreprise-x">Voir le projet</a>
+    </li>
+    <li>
+      <h2>Audit Google Ads - Client Y</h2>
+      <p>Audit complet des campagnes Google Ads. Recommandations pour améliorer la performance.</p>
+      <a href="/projets/audit-client-y">Voir le projet</a>
+    </li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
 
 </div>
